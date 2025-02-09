@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de tecnologias e linguagens de programação.">
+    <meta name="keywords" content="Portfólio, HTML, CSS, JavaScript, C#, C++, PHP, MySQL">
+    <meta name="author" content="[Seu Nome]">
+    <title>Portfólio Profissional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfólio de Linguagens</h1>
+            <p>Tecnologias que domino e utilizei em projetos.</p>
+            <div class="header-buttons">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i> Modo Escuro
+                </button>
+                <a href="Login/index.html" class="login-button">
+                    <button>
+                        <i class="fas fa-user"></i> Login
+                    </button>
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/joão-victor-mian-valdomiro-4abb01296/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Jvmian" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="filters">
+        <div class="container">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="frontend">Front-end</button>
+            <button class="filter-btn" data-filter="backend">Back-end</button>
+            <button class="filter-btn" data-filter="database">Banco de Dados</button>
+        </div>
+    </section>
+
+    <section class="languages">
+        <div class="container">
+            <div class="language-card" data-category="frontend">
+                <h2>HTML</h2>
+                <p>Estruturação de páginas web.</p>
+                <div class="language-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+            </div>
+            <div class="language-card" data-category="frontend">
+                <h2>CSS</h2>
+                <p>Estilização e design de interfaces.</p>
+                <div class="language-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+            </div>
+            <div class="language-card" data-category="frontend">
+                <h2>JavaScript</h2>
+                <p>Interatividade e dinamismo em páginas web.</p>
+                <div class="language-icon">
+                    <i class="fab fa-js-square"></i>
+                </div>
+            </div>
+            <div class="language-card" data-category="backend">
+                <h2>C#</h2>
+                <p>Desenvolvimento de aplicações desktop e web.</p>
+                <div class="language-icon">
+                    <i class="fab fa-microsoft"></i>
+                </div>
+            </div>
+            <div class="language-card" data-category="backend">
+                <h2>C++</h2>
+                <p>Desenvolvimento de sistemas e jogos.</p>
+                <div class="language-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+            <div class="language-card" data-category="backend">
+                <h2>PHP</h2>
+                <p>Desenvolvimento back-end para web.</p>
+                <div class="language-icon">
+                    <i class="fab fa-php"></i>
+                </div>
+            </div>
+            <div class="language-card" data-category="database">
+                <h2>MySQL</h2>
+                <p>Banco de dados relacional.</p>
+                <div class="language-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 - Desenvolvido por [Seu Nome]</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

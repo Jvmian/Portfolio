@@ -1,2 +1,2 @@
 # Portfolio
-Iniciando meu portfólio profissional.
+ Portfólio pessoal.
