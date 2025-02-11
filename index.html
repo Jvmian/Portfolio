@@ -1,108 +1,212 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio profissional de tecnologias e linguagens de programação.">
-    <meta name="keywords" content="Portfólio, HTML, CSS, JavaScript, C#, C++, PHP, MySQL">
-    <meta name="author" content="[Seu Nome]">
-    <title>Portfólio Profissional</title>
+    <meta name="description" content="Professional technology portfolio showcasing programming languages and skills">
+    <title>Technology Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Portfólio de Linguagens</h1>
-            <p>Tecnologias que domino e utilizei em projetos.</p>
-            <div class="header-buttons">
-                <button id="theme-toggle" class="theme-toggle">
-                    <i class="fas fa-moon"></i> Modo Escuro
+<body class="light-mode">
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Welcome Back</h2>
+                <button class="close-modal" aria-label="Close modal">
+                    <i data-lucide="x"></i>
                 </button>
-                <a href="Login/index.html" class="login-button">
-                    <button>
-                        <i class="fas fa-user"></i> Login
-                    </button>
-                </a>
             </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-icon">
+                        <i data-lucide="mail"></i>
+                        <input type="email" id="email" required placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-icon">
+                        <i data-lucide="lock"></i>
+                        <input type="password" id="password" required placeholder="Enter your password">
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="login-btn">
+                    <span>Sign In</span>
+                    <i data-lucide="arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <i data-lucide="code"></i>
+                <span>Portfolio</span>
+            </div>
+            <div class="nav-buttons">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i data-lucide="moon"></i>
+                </button>
+                <button id="loginButton" class="login-button">
+                    <i data-lucide="user"></i>
+                    <span>Sign In</span>
+                </button>
+            </div>
+        </nav>
+        <div class="container header-content">
+            <h1>Technology Portfolio</h1>
+            <p class="header-description">Showcasing my expertise across various technologies</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/joão-victor-mian-valdomiro-4abb01296/" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/Jvmian" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+                    <i data-lucide="linkedin"></i>
                 </a>
-                <a href="https://github.com/Jvmian" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i>
+                <a href="https://github.com/Jvmian" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+                    <i data-lucide="github"></i>
                 </a>
             </div>
         </div>
     </header>
 
-    <section class="filters">
-        <div class="container">
-            <button class="filter-btn active" data-filter="all">Todas</button>
-            <button class="filter-btn" data-filter="frontend">Front-end</button>
-            <button class="filter-btn" data-filter="backend">Back-end</button>
-            <button class="filter-btn" data-filter="database">Banco de Dados</button>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Filters -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+                <i data-lucide="layers"></i>
+                <span>All</span>
+            </button>
+            <button class="filter-btn" data-filter="frontend">
+                <i data-lucide="layout"></i>
+                <span>Frontend</span>
+            </button>
+            <button class="filter-btn" data-filter="backend">
+                <i data-lucide="server"></i>
+                <span>Backend</span>
+            </button>
+            <button class="filter-btn" data-filter="database">
+                <i data-lucide="database"></i>
+                <span>Database</span>
+            </button>
         </div>
-    </section>
 
-    <section class="languages">
-        <div class="container">
+        <!-- Language Cards -->
+        <div class="language-grid">
             <div class="language-card" data-category="frontend">
+                <div class="card-icon">
+                    <i data-lucide="layout"></i>
+                </div>
                 <h2>HTML</h2>
-                <p>Estruturação de páginas web.</p>
-                <div class="language-icon">
-                    <i class="fab fa-html5"></i>
+                <p>Building the foundation of modern web applications</p>
+                <div class="card-footer">
+                    <span class="experience">3+ years</span>
+                    <span class="proficiency">Advanced</span>
                 </div>
             </div>
+
             <div class="language-card" data-category="frontend">
+                <div class="card-icon">
+                    <i data-lucide="palette"></i>
+                </div>
                 <h2>CSS</h2>
-                <p>Estilização e design de interfaces.</p>
-                <div class="language-icon">
-                    <i class="fab fa-css3-alt"></i>
+                <p>Crafting beautiful and responsive user interfaces</p>
+                <div class="card-footer">
+                    <span class="experience">3+ years</span>
+                    <span class="proficiency">Advanced</span>
                 </div>
             </div>
+
             <div class="language-card" data-category="frontend">
+                <div class="card-icon">
+                    <i data-lucide="code-2"></i>
+                </div>
                 <h2>JavaScript</h2>
-                <p>Interatividade e dinamismo em páginas web.</p>
-                <div class="language-icon">
-                    <i class="fab fa-js-square"></i>
+                <p>Creating interactive and dynamic web experiences</p>
+                <div class="card-footer">
+                    <span class="experience">1+ years</span>
+                    <span class="proficiency">Advanced</span>
                 </div>
             </div>
+
             <div class="language-card" data-category="backend">
+                <div class="card-icon">
+                    <i data-lucide="server"></i>
+                </div>
                 <h2>C#</h2>
-                <p>Desenvolvimento de aplicações desktop e web.</p>
-                <div class="language-icon">
-                    <i class="fab fa-microsoft"></i>
+                <p>Developing robust enterprise applications</p>
+                <div class="card-footer">
+                    <span class="experience">2+ years</span>
+                    <span class="proficiency">Intermediate</span>
                 </div>
             </div>
+
             <div class="language-card" data-category="backend">
+                <div class="card-icon">
+                    <i data-lucide="cpu"></i>
+                </div>
                 <h2>C++</h2>
-                <p>Desenvolvimento de sistemas e jogos.</p>
-                <div class="language-icon">
-                    <i class="fas fa-code"></i>
+                <p>Building high-performance systems and games</p>
+                <div class="card-footer">
+                    <span class="experience">2+ years</span>
+                    <span class="proficiency">Intermediate</span>
                 </div>
             </div>
+
             <div class="language-card" data-category="backend">
+                <div class="card-icon">
+                    <i data-lucide="server"></i>
+                </div>
                 <h2>PHP</h2>
-                <p>Desenvolvimento back-end para web.</p>
-                <div class="language-icon">
-                    <i class="fab fa-php"></i>
+                <p>Powering dynamic web applications</p>
+                <div class="card-footer">
+                    <span class="experience">2+ years</span>
+                    <span class="proficiency">Basic</span>
                 </div>
             </div>
+
             <div class="language-card" data-category="database">
+                <div class="card-icon">
+                    <i data-lucide="database"></i>
+                </div>
                 <h2>MySQL</h2>
-                <p>Banco de dados relacional.</p>
-                <div class="language-icon">
-                    <i class="fas fa-database"></i>
+                <p>Managing and organizing data efficiently</p>
+                <div class="card-footer">
+                    <span class="experience">2+ years</span>
+                    <span class="proficiency">Intermediate</span>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 - Desenvolvido por [Seu Nome]</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i data-lucide="code"></i>
+                    <span>Portfolio</span>
+                </div>
+                <p class="footer-text">© 2025 - Developed by João Victor Mian Valdomiro</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/Jvmian" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Jvmian" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 

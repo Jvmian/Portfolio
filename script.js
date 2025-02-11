@@ -1,54 +1,92 @@
-// Modo claro/escuro
+// Initialize Lucide icons
+lucide.createIcons();
+
+// Theme toggle functionality
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
+const moonIcon = '<i data-lucide="moon"></i>';
+const sunIcon = '<i data-lucide="sun"></i>';
 
-// Verifica se o modo escuro está ativado no localStorage
-const isDarkMode = localStorage.getItem('darkMode') === 'true';
-if (isDarkMode) {
+// Check for saved theme preference
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
     body.classList.add('dark-mode');
-    themeToggle.innerHTML = '<i class="fas fa-sun"></i> Modo Claro';
+    themeToggle.innerHTML = sunIcon;
+    lucide.createIcons();
 }
 
 themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
-    const isDarkMode = body.classList.contains('dark-mode');
-    localStorage.setItem('darkMode', isDarkMode);
-    themeToggle.innerHTML = isDarkMode
-        ? '<i class="fas fa-sun"></i> Modo Claro'
-        : '<i class="fas fa-moon"></i> Modo Escuro';
+    const isDark = body.classList.contains('dark-mode');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    themeToggle.innerHTML = isDark ? sunIcon : moonIcon;
+    lucide.createIcons();
 });
 
-// Filtro de linguagens
+// Modal functionality
+const modal = document.getElementById('loginModal');
+const loginButton = document.getElementById('loginButton');
+const closeModal = document.querySelector('.close-modal');
+const loginForm = document.getElementById('loginForm');
+
+function openModal() {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModalFunc() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+loginButton.addEventListener('click', openModal);
+closeModal.addEventListener('click', closeModalFunc);
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        closeModalFunc();
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModalFunc();
+    }
+});
+
+loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const remember = document.getElementById('remember').checked;
+
+    // Here you would typically handle the login logic
+    console.log('Login attempt:', { email, password, remember });
+    
+    // Simulate login success
+    alert('Login successful!');
+    closeModalFunc();
+});
+
+// Filter functionality
 const filterButtons = document.querySelectorAll('.filter-btn');
 const languageCards = document.querySelectorAll('.language-card');
 
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Remove a classe 'active' de todos os botões
+        // Update active button
         filterButtons.forEach(btn => btn.classList.remove('active'));
-        // Adiciona a classe 'active' ao botão clicado
         button.classList.add('active');
 
-        const filter = button.getAttribute('data-filter');
-
+        // Filter cards
+        const filter = button.dataset.filter;
         languageCards.forEach(card => {
-            const category = card.getAttribute('data-category');
-            if (filter === 'all' || category === filter) {
+            if (filter === 'all' || card.dataset.category === filter) {
                 card.style.display = 'block';
-                card.style.animation = 'fadeIn 0.5s ease';
+                card.style.animation = 'fadeIn 0.5s ease-out';
             } else {
                 card.style.display = 'none';
             }
         });
     });
 });
-
-// Adicionando animação de fadeIn
-const style = document.createElement('style');
-style.innerHTML = `
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-`;
-document.head.appendChild(style);
