@@ -10,9 +10,8 @@ Este é o repositório oficial do meu portfólio profissional como Desenvolvedor
 
 Você pode acessar a versão ao vivo do portfólio aqui:
 
-**👉 `[COLOQUE O LINK DO SEU SITE AQUI]`**
+**👉(https://jvmian.github.io/Portifolio/)`**
 
-*(Sugestão: Você pode hospedar este site gratuitamente no [GitHub Pages](https://pages.github.com/) ou em serviços como [Vercel](https://vercel.com/) e [Netlify](https://www.netlify.com/))*
 
 ---
 
