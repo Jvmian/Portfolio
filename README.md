@@ -10,7 +10,7 @@ Este é o repositório oficial do meu portfólio profissional como Desenvolvedor
 
 Você pode acessar a versão ao vivo do portfólio aqui:
 
-**👉(https://jvmian.github.io/Portifolio/)`**
+**👉https://jvmian.github.io/Portifolio/**
 
 
 ---
