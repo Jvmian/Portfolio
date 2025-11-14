@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Victor Mian Valdomiro - Portfólio Profissional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>João Victor Mian Valdomiro</h1>
+            <p> Desenvolvedor de Sistemas e Técnico em Eletrônica</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <button id="menu-toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul id="nav-links">
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#competencias">Competências</a></li>
+                <li><a href="#idiomas">Idiomas</a></li> 
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            
+            <button id="theme-toggle-btn">
+                <i class="fas fa-sun"></i> 
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <section id="sobre" class="section about-section">
+            <div class="profile-photo-container">
+                <img src="imagens/foto.jpg" alt="Foto de perfil de João Victor Mian Valdomiro" class="profile-photo">
+            </div>
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou João Victor Mian Valdomiro. Sou um estudante com foco em <span class="highlight"> desenvolvimento de software e prototipagem eletrônica</span>. Minha trajetória é marcada pela curiosidade, pela busca constante por aprendizado prático e pela paixão por transformar ideias em realidade.</p>
+            <p>Com formação técnica em <strong>Desenvolvimento de Sistemas</strong> e <strong>Eletrônica</strong>, acredito que a melhor forma de aprender é "colocando a mão na massa". Dedico-me a criar soluções inovadoras que <span class="highlight">otimizem processos, resolvam problemas complexos e gerem impacto positivo.</span> Sou proativo, detalhista e sempre busco aprimorar minhas habilidades.</p>
+        </section>
+
+        <section id="projetos" class="section">
+            <h2>Projetos em Destaque</h2>
+            <div class="projetos-grid">
+
+                <article class="projeto-card">
+                    <div class="projeto-logo-container">
+                        <img src="imagens/logo-truco.png" alt="Logo Marcador de Truco">
+                    </div>
+                    <h3>Marcador de Truco com ATmega328P</h3>
+                    <p><strong><i class="fas fa-lightbulb"></i> Desafio:</strong> Desenvolver um placar digital e portátil para jogos de truco, substituindo a marcação manual. O principal desafio técnico foi implementar a lógica de <strong>multiplexação de display</strong> (time-division multiplexing) para controlar um display de 7 segmentos duplo diretamente com o ATmega328P, utilizando transistores para a comutação dos dígitos.</p>
+                    <p><strong><i class="fas fa-tools"></i> Tecnologias:</strong> Microcontrolador ATmega328P, Programação C++ (Arduino IDE), Display de 7 Segmentos (Duplo), Transistores (para multiplexação), Componentes Eletrônicos (capacitores, resistores).</p>
+                    <a href="#" class="btn open-modal-btn" data-target="modal-truco"><i class="fas fa-eye"></i> Ver Projeto</a>
+                </article>
+
+              
+                <article class="projeto-card">
+                    <div class="projeto-logo-container">
+                        <img src="imagens/logosmartliquid.png" alt="Logo Smart Liquid">
+                    </div>
+                    <h3>Smart Liquid</h3>
+                    <p><strong><i class="fas fa-lightbulb"></i> Desafio:</strong> Projetar um sistema de monitoramento via Internet (IoT). O desafio foi integrar múltiplos sensores (temperatura e nível de água) e um atuador (um servomotor simulando uma fechadura) em um ESP32. O sistema deveria coletar dados em tempo real e enviá-los via Wi-Fi para uma plataforma ou site, permitindo monitoramento remoto.</p>
+                    <p><strong><i class="fas fa-tools"></i> Tecnologias:</strong> ESP32 (com Wi-Fi), Sensor de Temperatura (DS18B20), Sensor de Água(HW), Servomotor (SG90), Programação C++ (Arduino IDE), Progamação HTML, CSS, JavaScript, PHP e Mysql para o site.</p>
+                    <a href="#" class="btn open-modal-btn" data-target="modal-liquid"><i class="fas fa-eye"></i> Ver Projeto</a>
+                </article>
+              
+
+                
+                <article class="projeto-card">
+                    <div class="projeto-logo-container">
+                        <img src="imagens/logocuba.png" alt="Logo Cuba Automatizada">
+                    </div>
+                    <h3>Cuba Automatizada</h3>
+                    <p><strong><i class="fas fa-lightbulb"></i> Desafio:</strong> Desenvolver uma 'cuba de pia' totalmente automatizada e *touchless* (sem contato), focando em higiene e eficiência. O projeto exigiu a integração de três sistemas independentes: 1) Um sensor de presença (PIR) para acionamento automático da iluminação. 2) Um sensor infravermelho para detectar as mãos e acionar a bomba d'água da torneira. 3) Um segundo sensor infravermelho para acionar o secador de mãos.</p>
+                    <p><strong><i class="fas fa-tools"></i> Tecnologias:</strong>Sensor de Presença (PIR), Sensores Infravermelhos (x2, E3F-DS30C4), Relé (para controle da bomba e secador), Bomba d'água.</p>
+                    <a href="#" class="btn open-modal-btn" data-target="modal-cuba"><i class="fas fa-eye"></i> Ver Projeto</a>
+                </article>
+               
+
+            </div>
+        </section>
+
+        <section id="competencias" class="section">
+            <h2>Minhas Competências</h2>
+            <div class="competencias-grid">
+                <div class="competencia-coluna">
+                    <h3><i class="fas fa-laptop-code"></i> Técnicas (Hard Skills)</h3>
+                    <ul>
+                        <li><i class="fas fa-code"></i> Linguagens: C++, Python, JavaScript, Java, SQL</li>
+                        <li><i class="fas fa-microchip"></i> Hardware & Eletrônica: Arduino, ESP32, Sensores, Circuitos, Solda</li>
+                        <li><i class="fas fa-globe"></i> Desenvolvimento Web: HTML5, CSS3, JavaScript, React.js (básico)</li>
+                        <li><i class="fas fa-database"></i> Banco de Dados: MySQL</li>
+                        <li><i class="fas fa-robot"></i> Ferramentas: GitHub, VS Code</li>
+                    </ul>
+                </div>
+                <div class="competencia-coluna">
+                    <h3><i class="fas fa-users"></i> Comportamentais (Soft Skills)</h3>
+                    <ul>
+                        <li><i class="fas fa-lightbulb"></i> Resolução de Problemas Complexos</li>
+                        <li><i class="fas fa-handshake"></i> Colaboração e Trabalho em Equipe</li>
+                        <li><i class="fas fa-comments"></i> Comunicação Efetiva e Apresentação</li>
+                        <li><i class="fas fa-rocket"></i> Proatividade e Iniciativa</li>
+                        <li><i class="fas fa-brain"></i> Pensamento Crítico e Adaptabilidade</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="idiomas" class="section">
+            <h2>Idiomas</h2>
+            <div class="idiomas-container">
+                <div class="idioma-item">
+                    <h3>
+                        <img src="https://flagcdn.com/w20/br.png" alt="Bandeira do Brasil" class="flag-icon">
+                        Português
+                    </h3>
+                    <p>Nativo</p>
+                </div>
+                <div class="idioma-item">
+                    <h3>
+                        <img src="https://flagcdn.com/w20/us.png" alt="Bandeira dos EUA" class="flag-icon">
+                        Inglês
+                    </h3>
+                    <p>Intermediário</p>
+                </div>
+                <div class="idioma-item">
+                    <h3>
+                        <img src="https://flagcdn.com/w20/es.png" alt="Bandeira da Espanha" class="flag-icon">
+                        Espanhol
+                    </h3>
+                    <p>Intermediário</p>
+                </div>
+            </div>
+        </section>
+        <section id="experiencia" class="section">
+            <h2>Experiência Profissional</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Estagiário de Informática</h3>
+                        <p class="instituicao"><em>ETEL - Escola Técnica de Eletrônica</em>, Ipaussu</p>
+                        <p class="periodo">03/2024 - 03/2025</p>
+                        <p class="descricao">Suporte técnico, manutenção de computadores e configuração de sistemas.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Freelancer</h3>
+                        <p class="instituicao"><em>Pizzaria LA CASA</em>, Ipaussu</p>
+                        <p class="periodo">11/2023 - 01/2025</p>
+                        <p class="descricao">Atendimento a clientes, organização de pedidos e auxílio na rotina geral do local.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Assistente em Refrigeração</h3>
+                        <p class="instituicao"><em>Adriano Ar-Condicionado</em>, Ipaussu</p>
+                        <p class="periodo">11/2023 - 03/2024</p>
+                        <p class="descricao">Auxílio na instalação, manutenção e limpeza de sistemas. Experiência em diagnóstico e reparo de equipamentos de refrigeração.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="formacao" class="section">
+            <h2>Formação Acadêmica</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Ensino Médio com Técnico em Desenvolvimento de Sistemas</h3>
+                        <p class="instituicao"><em>ETEC 097 (Pedro Leme Brisolla Sobrinho)</em>, Ipaussu</p>
+                        <p class="periodo">Conclusão: 2025</p>
+                        <p class="descricao">Formação integrada com foco em lógica de programação, banco de dados, desenvolvimento de software e sistemas web.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Técnico em Eletrônica</h3>
+                        <p class="instituicao"><em>ETEL (Escola Técnica de Eletrônica)</em>, Ipaussu</p>
+                        <p class="periodo">Conclusão: 2026</p>
+                        <p class="descricao">Sólida base em circuitos elétricos, sistemas digitais, microcontroladores, telecomunicações e prototipagem de hardware.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contato" class="section">
+            <h2>Vamos Conversar?</h2>
+            <p>Estou sempre disponível para discutir novas ideias, projetos e oportunidades. Entre em contato!</p>
+            <div class="contato-links">
+                
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=joaovictormian@gmail.com" target="_blank" class="contato-item"> <i class="fas fa-envelope"></i> E-mail
+                </a>
+                
+                <a href="https://linkedin.com/in/jvmian" target="_blank" class="contato-item">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Jvmian" target="_blank" class="contato-item">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                 <a href="curriculo.pdf" download="Curriculo.pdf" class="contato-item">
+                    <i class="fas fa-file-pdf"></i> Currículo (PDF)
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="modal-truco" class="modal">
+        <div class="modal-overlay"></div> 
+        <div class="modal-content">
+            <span class="modal-close">&times;</span> 
+            <h3>Marcador de Truco com ATmega328P</h3>
+            <div class="carousel" data-carousel="carousel-truco">
+                <div class="carousel-slides">
+                    <div class="carousel-slide active-slide" data-description="Foto do projeto finalizado.">
+                        <img src="imagens/truco1.jpg" alt="Foto 1 do Projeto Truco">
+                    </div>
+                    <div class="carousel-slide" data-description="Foto da placa utilizada no projeto.">
+                        <img src="imagens/truco2.PNG" alt="Foto 2 do Projeto Truco">
+                    </div>
+                    <div class="carousel-slide" data-description="Vídeo de demonstração do placar em funcionamento, mostrando a troca de pontos.">
+                           <video width="100%" controls src="imagens/truco3.mp4"></video>
+                    </div>
+                </div>
+                <a class="carousel-prev">&#10094;</a>
+                <a class="carousel-next">&#10095;</a>
+            </div>
+            <p class="carousel-description">Uma breve descrição sobre as fotos ou o projeto, se desejar.</p>
+        </div>
+    </div>
+    <div id="modal-liquid" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3>Smart Liquid</h3>
+             <div class="carousel" data-carousel="carousel-liquid">
+                <div class="carousel-slides">
+                    <div class="carousel-slide active-slide" data-description="Foto da página inicial do site da Smart Liquid .">
+                        <img src="imagens/smart9.jpg" alt="Foto 1 do Projeto Smart Liquid">
+                    </div>
+                    <div class="carousel-slide" data-description="Foto da página de compra - o usuário deve colocar suas credenciais.">
+                        <img src="imagens/smart5.jpg" alt="Foto 2 do Projeto Smart Liquid">
+                    </div>
+                    <div class="carousel-slide" data-description="Foto da página de compra - o usuário deve colocar seus funcionários.">
+                        <img src="imagens/smart6.jpg" alt="Foto 3 do Projeto Smart Liquid">
+                    </div>
+                    <div class="carousel-slide" data-description="Foto da página de compra - o usuário deve configurar seu sistema.">
+                        <img src="imagens/smart7.jpg" alt="Foto 4 do Projeto Smart Liquid">
+                    </div>
+                    <div class="carousel-slide" data-description="Foto da página do adiministrador recebendo o pedido da compra.">
+                        <img src="imagens/smart8.jpg" alt="Foto 5 do Projeto Smart Liquid">
+                    </div>
+                    <div class="carousel-slide" data-description="Vídeo demonstrando o funcionamento de todas funções do projeto.">
+                           <video width="100%" controls src="imagens/smart10.mp4" alt="Vídeo do funcionamento do Projeto Smart Liquid"></video>
+                    </div>
+                    <div class="carousel-slide active-slide" data-description="Foto da página de monitoramento - exibindo os dados e quem realizou (realizados no vídeo anterior).">
+                        <img src="imagens/smart4.jpg" alt="Foto 6 do Projeto Smart Liquid">
+                    </div>
+                    <div class="carousel-slide active-slide" data-description="Foto do projeto montado, mostrando parte frontal com o teclado e o cano para saída do líquido.">
+                        <img src="imagens/smart1.jpg" alt="Foto 7 do Projeto Smart Liquid">
+                    </div>
+                    <div class="carousel-slide" data-description="Foto exibindo a parte traseira do projeto.">
+                        <img src="imagens/smart2.jpg" alt="Foto 8 do Projeto Smart Liquid">
+                    </div>
+                    <div class="carousel-slide" data-description="Foto exibindo a parte interior do projeto.">
+                        <img src="imagens/smart3.jpg" alt="Foto 9 do Projeto Smart Liquid">
+                    </div>
+                </div>
+                <a class="carousel-prev">&#10094;</a>
+                <a class="carousel-next">&#10095;</a>
+            </div>
+            <p class="carousel-description">Use as setas para navegar pelas mídias do projeto.</p>
+        </div>
+    </div>
+    <div id="modal-cuba" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3>Cuba Automatizada</h3>
+            <div class="carousel" data-carousel="carousel-cuba">
+                <div class="carousel-slides">
+                    <div class="carousel-slide active-slide" data-description="Foto do projeto montado, mostrando a cuba e a posição dos sensores.">
+                        <img src="imagens/cuba1.jpg" alt="Foto 1 do Projeto Cuba Automatizada">
+                    </div>
+                    <div class="carousel-slide" data-description="Foto da placa finalizada com os componentes soldados.">
+                        <img src="imagens/cuba2.jpg" alt="Foto 2 do Projeto Cuba Automatizada">
+                    </div>
+                    <div class="carousel-slide" data-description="Vídeo exibindo todos detalhes da maquete.">
+                           <video width="100%" controls src="imagens/cuba3.mp4" alt="Vídeo do Projeto Cuba Automatizada"></video>
+                    </div>
+                    <div class="carousel-slide" data-description="Vídeo demonstrando o acionamento do projeto.">
+                           <video width="100%" controls src="imagens/cuba4.mp4" alt="Vídeo do funcionamento do Projeto Cuba Automatizada"></video>
+                    </div>
+                </div>
+                <a class="carousel-prev">&#10094;</a>
+                <a class="carousel-next">&#10095;</a>
+            </div>
+            <p class="carousel-description">Use as setas para navegar pelas mídias do projeto.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 João Victor Mian Valdomiro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Voltar ao Topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
