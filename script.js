@@ -65,6 +65,7 @@ const translations = {
     // Competências
     comp_titulo: "Minhas Competências",
     comp_hard: '<i class="fas fa-laptop-code"></i> Técnicas (Hard Skills)',
+    skills_1:'Arduino, ESP-32, Sensores, Circuitos',
     comp_soft: '<i class="fas fa-users"></i> Comportamentais (Soft Skills)',
     soft_1:
       '<i class="fas fa-lightbulb"></i> Resolução de Problemas Complexos',
@@ -117,7 +118,7 @@ const translations = {
 
     // Footer
     footer_text:
-      "&copy; 2026 João Victor Mian Valdomiro. Todos os direitos reservados.",
+      "&copy; 2025 João Victor Mian Valdomiro. Todos os direitos reservados.",
 
     // Modal
     modal_nav_hint: "Use as setas para navegar.",
@@ -172,6 +173,7 @@ const translations = {
     // Skills
     comp_titulo: "My Skills",
     comp_hard: '<i class="fas fa-laptop-code"></i> Technical Skills',
+    skills_1:'Arduino, ESP-32, Sensors, Circuits',
     comp_soft: '<i class="fas fa-users"></i> Soft Skills',
     soft_1: '<i class="fas fa-lightbulb"></i> Complex Problem Solving',
     soft_2: '<i class="fas fa-handshake"></i> Team Collaboration',
@@ -222,7 +224,7 @@ const translations = {
 
     // Footer
     footer_text:
-      "&copy; 2026 João Victor Mian Valdomiro. All rights reserved.",
+      "&copy; 2025 João Victor Mian Valdomiro. All rights reserved.",
 
     // Modal
     modal_nav_hint: "Use the arrows to navigate.",
@@ -526,4 +528,3 @@ const translations = {
     });
   });
 });
-
