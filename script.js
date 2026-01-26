@@ -118,7 +118,7 @@ const translations = {
 
     // Footer
     footer_text:
-      "&copy; 2025 João Victor Mian Valdomiro. Todos os direitos reservados.",
+      "&copy; 2026 João Victor Mian Valdomiro. Todos os direitos reservados.",
 
     // Modal
     modal_nav_hint: "Use as setas para navegar.",
@@ -224,7 +224,7 @@ const translations = {
 
     // Footer
     footer_text:
-      "&copy; 2025 João Victor Mian Valdomiro. All rights reserved.",
+      "&copy; 2026 João Victor Mian Valdomiro. All rights reserved.",
 
     // Modal
     modal_nav_hint: "Use the arrows to navigate.",
@@ -528,3 +528,4 @@ const translations = {
     });
   });
 });
+
