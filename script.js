@@ -65,7 +65,7 @@ const translations = {
     // Competências
     comp_titulo: "Minhas Competências",
     comp_hard: '<i class="fas fa-laptop-code"></i> Técnicas (Hard Skills)',
-    skills_1:'Arduino, ESP-32, Sensores, Circuitos',
+    skills_1:'<i class="fas fa-microchip"></i> Arduino, ESP-32, Sensores, Circuitos',
     comp_soft: '<i class="fas fa-users"></i> Comportamentais (Soft Skills)',
     soft_1:
       '<i class="fas fa-lightbulb"></i> Resolução de Problemas Complexos',
@@ -173,7 +173,7 @@ const translations = {
     // Skills
     comp_titulo: "My Skills",
     comp_hard: '<i class="fas fa-laptop-code"></i> Technical Skills',
-    skills_1:'Arduino, ESP-32, Sensors, Circuits',
+    skills_1:'<i class="fas fa-microchip"></i> Arduino, ESP-32, Sensors, Circuits',
     comp_soft: '<i class="fas fa-users"></i> Soft Skills',
     soft_1: '<i class="fas fa-lightbulb"></i> Complex Problem Solving',
     soft_2: '<i class="fas fa-handshake"></i> Team Collaboration',
