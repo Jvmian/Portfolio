@@ -1,73 +1,72 @@
-# Portfólio Pessoal - João Victor Mian Valdomiro
+# Personal Portfolio – João Victor Mian Valdomiro
 
-![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Este é o repositório oficial do meu portfólio profissional como Desenvolvedor de Sistemas e Técnico em Eletrônica. Ele foi criado do zero para demonstrar meus projetos, competências e trajetória profissional de forma moderna, interativa e totalmente responsiva.
-
----
-
-## 🚀 Demo ao Vivo
-
-Você pode acessar a versão ao vivo do portfólio aqui:
-
-**👉https://jvmian.github.io/Portifolio/**
-
+This is the official repository of my professional portfolio as a **Systems Developer** and **Electronics Technician**. It was built from scratch to showcase my projects, skills, and professional journey in a modern, interactive, and fully responsive way.
 
 ---
 
-## ✨ Funcionalidades Principais
+## 🚀 Live Demo
 
-O projeto foi construído com foco em performance e usabilidade, sem depender de frameworks ou bibliotecas pesadas.
+You can access the live version of the portfolio here:
 
-* **🎨 Tema Light/Dark:** Alternância de tema (claro e escuro) que salva a preferência do usuário no `localStorage`, incluindo a troca da foto de perfil para se adequar ao modo.
-* **📱 Design Totalmente Responsivo:** Layout que se adapta perfeitamente a desktops, tablets e celulares, usando `Flexbox`, `Grid` e `Media Queries`.
-* **🍔 Menu Hamburger:** Menu lateral "slide-in" para navegação intuitiva em dispositivos móveis, construído com JavaScript puro.
-* **🖼️ Modais de Projeto:** Janelas pop-up para exibir detalhes (fotos e vídeos) de cada projeto sem sair da página.
-* **🎠 Carrossel de Mídia:** Um slider de imagens e vídeos customizado dentro de cada modal.
-* **🧭 Navegação Fluida:** `Smooth scroll` para rolagem suave ao clicar nos links do menu e `position: sticky` para a barra de navegação.
-* **⏳ Layout em Timeline:** Seções de "Experiência" e "Formação" em um formato de linha do tempo responsivo.
-* **✨ Animações ao Rolar:** Efeitos sutis de "fade-in" para os elementos da página usando `IntersectionObserver` para melhor performance.
+**👉 https://jvmian.github.io/Portifolio/**
 
 ---
 
-## 💻 Tecnologias Utilizadas
+## ✨ Main Features
 
-Este projeto foi construído do zero utilizando apenas as tecnologias web fundamentais:
+The project was built with a strong focus on performance and usability, without relying on heavy frameworks or libraries.
 
-* **HTML5:** Estrutura semântica e acessível.
-* **CSS3:** Estilização avançada, animações, variáveis CSS (para o tema) e layout responsivo.
-* **JavaScript (ES6+):** Manipulação do DOM e lógica para todas as funcionalidades interativas (Menu, Tema, Modais, Carrossel, Scroll, etc.).
+- **🎨 Light/Dark Theme:** Theme toggle (light and dark modes) that saves the user’s preference in `localStorage`, including automatic profile image switching to match the selected mode.
+- **📱 Fully Responsive Design:** Layout adapts perfectly to desktops, tablets, and mobile devices using `Flexbox`, `Grid`, and `Media Queries`.
+- **🍔 Hamburger Menu:** Slide-in side menu for intuitive navigation on mobile devices, built with pure JavaScript.
+- **🖼️ Project Modals:** Pop-up windows to display project details (images and videos) without leaving the page.
+- **🎠 Media Carousel:** Custom-built image and video slider inside each project modal.
+- **🧭 Smooth Navigation:** `Smooth scroll` for seamless navigation when clicking menu links and `position: sticky` for the navigation bar.
+- **⏳ Timeline Layout:** “Experience” and “Education” sections displayed in a responsive timeline format.
+- **✨ Scroll Animations:** Subtle fade-in animations triggered on scroll using `IntersectionObserver` for better performance.
 
 ---
 
-## 📂 Como Executar Localmente
+## 💻 Technologies Used
 
-Não é necessário nenhum build ou instalação complexa. Basta clonar o repositório e abrir o arquivo `index.html` no seu navegador.
+This project was built entirely from scratch using only core web technologies:
+
+- **HTML5:** Semantic and accessible structure.
+- **CSS3:** Advanced styling, animations, CSS variables (for theming), and responsive layouts.
+- **JavaScript (ES6+):** DOM manipulation and logic for all interactive features (Menu, Theme, Modals, Carousel, Scrolling, etc.).
+
+---
+
+## 📂 How to Run Locally
+
+No build process or complex installation is required. Just clone the repository and open the `index.html` file in your browser.
 
 ```bash
-# 1. Clone o repositório
-git clone [https://github.com/](https://github.com/)[SEU-USUÁRIO]/[SEU-REPOSITORIO].git
+# 1. Clone the repository
+git clone https://github.com/[YOUR-USERNAME]/[YOUR-REPOSITORY].git
 
-# 2. Navegue até a pasta do projeto
-cd [SEU-REPOSITORIO]
+# 2. Navigate to the project folder
+cd [YOUR-REPOSITORY]
 
-# 3. Abra o arquivo index.html no seu navegador
-# (Você pode simplesmente dar um duplo clique nele no seu gerenciador de arquivos)
+# 3. Open the index.html file in your browser
+# (You can simply double-click it in your file manager)
 ```
 
 ---
 
-## 📝 Licença
+## 📝 License
 
-Este projeto está sob a licença MIT. Isso significa que você é livre para usar, modificar e distribuir o código, desde que inclua o aviso de copyright original.
+This project is licensed under the MIT License. This means you are free to use, modify, and distribute the code, as long as you include the original copyright notice.
 
-Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-## 📬 Contato
+## 📬 Contact
 
-Vamos conversar! Sinta-se à vontade para entrar em contato:
+Let’s connect! Feel free to reach out:
 
 * **LinkedIn:** [linkedin.com/in/jvmian](https://linkedin.com/in/jvmian)
 * **GitHub:** [github.com/Jvmian](https://github.com/Jvmian)
